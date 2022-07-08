@@ -8,7 +8,8 @@ We had to do an assignment where we developed a WPF application for it.
 This WPF program is the result of our assignmenment.
 
 
-# What we have learned ion this project
+# What we have learned in this project
+- How to create an WPF application.
 - How to encode, encrypt and decrypt and decode data on AES encryption
 - How to use Base64 string to achieve encryption and decryption.
 - How to convert images to Base64.
