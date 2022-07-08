@@ -1,0 +1,45 @@
+﻿<Window x:Class="EncryptionTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EncryptionTool"
+        mc:Ignorable="d"
+        Title="Encryption tool Team 1" Height="896" Width="1474">
+    <Grid>
+        
+        <Grid.Background>
+            <ImageBrush ImageSource="/encryption.jpg" Opacity="0.15"/>
+        </Grid.Background>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Grid.ColumnSpan="2" Margin="0,0,0,-13">
+                <Label x:Name="lblTitel" Content="Encryptie-tool Team 1" FontSize="48" HorizontalAlignment="Center" Margin="0,50,0,50"/>
+                <StackPanel HorizontalAlignment="Stretch">
+                    <Label x:Name="lblSleutelsTitel" Content="Sleutels" FontSize="24" HorizontalContentAlignment="Center" BorderBrush="#FF262646" BorderThickness="0,0,0,1" SnapsToDevicePixels="True" ClipToBounds="True" Margin="0,0,-4,30" HorizontalAlignment="Center" Padding="20,5,20,5"/>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,100" HorizontalAlignment="Center">
+                        <ComboBox ItemContainerStyle="{DynamicResource ComboBoxItemContainerStyle1}" x:Name="cboKiesSleutel" DockPanel.Dock="Bottom" Width="200" HorizontalAlignment="Stretch" Margin="0,0,0,0" Height="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" SelectionChanged="cboKiesSleutel_SelectionChanged" FontWeight="Bold"/>
+                    </StackPanel>
+                    <Button x:Name="btnOpenWindowGenereerSleutel" Content="Genereer sleutel" Click="btnOpenWindowGenereerSleutel_Click" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,30"/>
+
+                </StackPanel>
+
+                <DockPanel Margin="0,0,0,50">
+                    <Image x:Name="imgSleutelGeactiveerd" DockPanel.Dock="Top" Width="50" Height="50" Margin="0,0,0,10" Visibility="Visible" OpacityMask="#FFD5D5DA"></Image>
+                    <Label x:Name="lblActieveSleutel" DockPanel.Dock="Bottom" Content="" Margin="0,0,0,0" HorizontalAlignment="Center" FontSize="24"/>
+                </DockPanel>
+
+                <StackPanel Margin="0,0,0,94">
+                    <Label x:Name="lblCryptTitel" Content="Encrypteren/Decrypteren" FontSize="24" HorizontalContentAlignment="Center" BorderBrush="#FF262646" BorderThickness="0,0,0,1" SnapsToDevicePixels="True" ClipToBounds="True" Margin="0,0,-4,30" HorizontalAlignment="Center" Padding="20,5,20,5"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button x:Name="btnOpenWindowEncryption" Content="Encrypteren" Click="btnOpenWindowEncryption_Click" Margin="0,0,20,0" HorizontalAlignment="Center"/>
+                        <Button x:Name="btnOpenWindowDecryption" Content="Decrypteren" Click="btnOpenWindowDecryption_Click" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="20,0,0,0"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            
+
+        </ScrollViewer>
+
+
+    </Grid>
+</Window>
