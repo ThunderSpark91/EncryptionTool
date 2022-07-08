@@ -1,6 +1,6 @@
 # EncryptionTool
 
-What is the Reuslt
+# What is the program?
 In our programming evening course we learned about encryption and encoding.
 To make us understand how we can encrypt data, and decrypt it. 
 We had to do an assignment where we developed a WPF application for it.
