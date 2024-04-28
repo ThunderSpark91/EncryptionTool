@@ -5,7 +5,7 @@ In our programming evening course we learned about encryption and encoding.
 To make us understand how we can encrypt data, and decrypt it. 
 We had to do an assignment where we developed a WPF application for it.
 
-This WPF program is the result of our assignmenment.
+This WPF program is the result of our asignmenment.
 
 
 # What we have learned in this project
